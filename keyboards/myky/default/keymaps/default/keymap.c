@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       * │Sft│ Z │ X │ C │ V │ B │ ' │       │ ] │ N │ M │ , │ . │ / │ ¥ │
       * └───┴───┴───┴───┴───┴───┴───┘       └───└───┴───┴───┴───┴───┴───┘
       * ┌───────┐   ┌───┬───┐                       ┌───┬───┐   ┌───────┐
-      * │ EISU  │   │Alt│Win├───┐               ┌───┤Ent│Alt│   │ KANA  │
+      * │ EISU  │   │Win│Ctl├───┐               ┌───┤Ent│Alt│   │ KANA  │
       * └───────┘   └───┴───┤Spc├───┐       ┌───┤Bsp├───┴───┘   └───────┘
       *                     └───┤LOW│       │UPR├───┘                             SandSはSFT_T(kc)で実装可
       *                         └───┘       └───┘
@@ -29,7 +29,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,       KC_Q, KC_W,    KC_E, KC_R, KC_T,                         KC_Y,    KC_U,   KC_I,    KC_O,   KC_P,    KC_EQL,
         KC_CAPS_LOCK, KC_A, KC_S,    KC_D, KC_F, KC_G,   KC_INS,    KC_LBRC,   KC_H,    KC_J,   KC_K,    KC_L,   KC_SCLN, KC_QUOT,
         KC_LSFT,      KC_Z, KC_X,    KC_C, KC_V, KC_B,   KC_GRV,    KC_RBRC,   KC_N,    KC_M,   KC_COMM, KC_DOT, KC_SLSH, KC_BSLS,
-        KC_LNG2,            KC_LCTL, KC_LGUI,    KC_SPC, TT(LOWER), TT(RAISE), KC_BSPC, KC_ENT, KC_LALT,                  KC_LNG1
+        KC_LNG2,            KC_LGUI, KC_LCTL, KC_SPC, TT(LOWER),    TT(RAISE), KC_BSPC, KC_ENT, KC_LALT,                  KC_LNG1
     ),
      /* LOWER
       * ┌───┬───┬───┬───┬───┬───┐               ┌───┬───┬───┬───┬───┬───┐
@@ -42,7 +42,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       * │Sft│   │ ← │ ↓ │ → │END│Del│       │ ) │VL-│ . │ 0 │ = │ + │   │
       * └───┴───┴───┴───┴───┴───┴───┘       └───└───┴───┴───┴───┴───┴───┘
       * ┌───────┐   ┌───┬───┐                       ┌───┬───┐   ┌───────┐
-      * │ EISU  │   │Ctl│Win├───┐               ┌───┤Ent│Alt│   │ KANA  │
+      * │ EISU  │   │Win│Ctl├───┐               ┌───┤Ent│Alt│   │ KANA  │
       * └───────┘   └───┴───┤Spc├───┐       ┌───┤Bsp├───┴───┘   └───────┘
       *                     └───┤LOW│       │UPR├───┘                             SandSはSFT_T(kc)で実装可
       *                         └───┘       └───┘
@@ -65,7 +65,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       * │Sft│PGD│ ← │ ↓ │ → │END│Del│       │   │VL-│SAD│SAI│Brt│   │   │
       * └───┴───┴───┴───┴───┴───┴───┘       └───└───┴───┴───┴───┴───┴───┘
       * ┌───────┐   ┌───┬───┐                       ┌───┬───┐   ┌───────┐
-      * │ EISU  │   │Alt│Win├───┐               ┌───┤Ent│Alt│   │ KANA  │
+      * │ EISU  │   │Win│Ctl├───┐               ┌───┤Ent│Alt│   │ KANA  │
       * └───────┘   └───┴───┤Spc├───┐       ┌───┤Bsp├───┴───┘   └───────┘
       *                     └───┤LOW│       │UPR├───┘                             SandSはSFT_T(kc)で実装可
       *                         └───┘       └───┘
